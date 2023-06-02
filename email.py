@@ -2,13 +2,18 @@ import random
 import string
 emails=[]
 passwords=[]
-word_length = 6  # تعیین طول کلمه
-random_word = ''.join(random.choices(string.ascii_lowercase, k=word_length))
-print("کلمه تصادفی: ", random_word.encode('utf-8').decode('utf-8'))
+word_length = int(input("enter number"))  # تعیین طول کلمه
 
+# create words
+random_word = ''.join(random.choices(string.ascii_lowercase, k=word_length)) 
+# print("کلمه تصادفی: ", random_word.encode('utf-8').decode('utf-8'))
+
+
+# create characters
 characters = string.ascii_lowercase + string.digits + '_'
-print("لیست کاراکترها: ", characters)
+# print("لیست کاراکترها: ", characters)
 
+# create numbers
 numbers = list(range(10))
 
 
