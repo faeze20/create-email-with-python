@@ -4,8 +4,8 @@ emails=[]
 passwords=[]
 word_length = int(input("enter number"))  # تعیین طول کلمه
 
-# create words
-random_word = ''.join(random.choices(string.ascii_lowercase, k=word_length)) 
+random_word=''.join(random.choices(string.ascii_uppercase+string.ascii_lowercase, k=word_length))
+ 
 # print("کلمه تصادفی: ", random_word.encode('utf-8').decode('utf-8'))
 
 
